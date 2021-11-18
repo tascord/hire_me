@@ -65,9 +65,63 @@ function Skills() {
 function Projects() {
     return (
         <section data-section="projects">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-[10rem] h-[10rem] mr-5 rounded-3xl" width="10rem" height="10rem" viewBox="0 0 50 50">
+                <path fill="white" d="M 6 2 C 2.699219 2 0 4.699219 0 8 L 0 37 C 0 40.300781 2.699219 43 6 43 L 50 43 L 50 7 L 11.796875 7 C 11.300781 4.191406 8.949219 2 6 2 Z M 6 4 C 8.21875 4 10 5.78125 10 8 L 10 32.546875 C 8.9375 31.589844 7.535156 31 6 31 C 4.464844 31 3.0625 31.589844 2 32.546875 L 2 8 C 2 5.78125 3.78125 4 6 4 Z M 12 9 L 48 9 L 48 41 L 6 41 C 3.78125 41 2 39.21875 2 37 C 2 34.78125 3.78125 33 6 33 C 8.21875 33 10 34.78125 10 37 L 12 37 Z M 35 15 L 37.792969 17.792969 L 32.5 23.085938 L 27.046875 17.628906 L 18.34375 25.25 L 19.65625 26.75 L 26.953125 20.371094 L 32.5 25.914063 L 39.207031 19.207031 L 42 22 L 42 15 Z M 17 32 L 17 34 L 42 34 L 42 32 Z"></path>
+            </svg>
             <p>
                 All of my open source projects are available on my <a href="https://github.com/tascord/">GitHub</a> page.
             </p>
+
+            <div className="reviews">
+                <article>
+                    <p className="text-lg font-light">
+                        <h2 className="font-bold text-xl text-pink-300">Hire Me</h2>
+                        This very site, right here. <br />
+                        Built with React, TypeScript, and TailwindCSS.
+                    </p>
+                    <sub>
+                        <a href="https://github.com/tascord/hire_me">
+                            Head to GitHub!
+                        </a>
+                    </sub>
+                </article>
+                <article>
+                    <p className="text-lg font-light">
+                        <h2 className="font-bold text-xl text-pink-300">Dence</h2>
+                        A very minimal express replacement. Still in beta! <br />
+                        Built with Typescript.
+                    </p>
+                    <sub>
+                        <a href="https://github.com/tascord/dence">
+                            Head to GitHub!
+                        </a>
+                    </sub>
+                </article>
+                <article>
+                    <p className="text-lg font-light">
+                        <h2 className="font-bold text-xl text-pink-300">cQ (cQuestions)</h2>
+                        A little forms framework for HTML<br />
+                        Built with JavaScript.
+                    </p>
+                    <sub>
+                        <a href="https://github.com/tascord/cQ">
+                            Head to GitHub!
+                        </a>
+                    </sub>
+                </article>
+                <article>
+                    <p className="text-lg font-light">
+                        <h2 className="font-bold text-xl text-pink-300">Petal</h2>
+                        A discord.js framework aimed to make building bots with haste and ease.<br />
+                        Built with Typescript.
+                    </p>
+                    <sub>
+                        <a href="https://github.com/tascord/Petal">
+                            Head to GitHub!
+                        </a>
+                    </sub>
+                </article>
+            </div>
         </section>
     )
 }
@@ -75,6 +129,11 @@ function Projects() {
 function Testimonials() {
     return (
         <section data-section="projects">
+
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-[10rem] h-[10rem] mr-5 rounded-3xl" width="10rem" height="10rem" viewBox="10 5 70 70">
+                <path fill="white" d="M 40 4 C 37.050781 4 34.699219 6.191406 34.203125 9 L 18 9 C 16.355469 9 15 10.355469 15 12 L 15 68 C 15 69.644531 16.355469 71 18 71 L 62 71 C 63.644531 71 65 69.644531 65 68 L 65 12 C 65 10.355469 63.644531 9 62 9 L 45.796875 9 C 45.300781 6.191406 42.949219 4 40 4 Z M 40 6 C 42.21875 6 44 7.78125 44 10 L 44 11 L 50 11 L 50 14 C 50 14.566406 49.566406 15 49 15 L 31 15 C 30.433594 15 30 14.566406 30 14 L 30 11 L 36 11 L 36 10 C 36 7.78125 37.78125 6 40 6 Z M 40 9 C 39.449219 9 39 9.449219 39 10 C 39 10.550781 39.449219 11 40 11 C 40.550781 11 41 10.550781 41 10 C 41 9.449219 40.550781 9 40 9 Z M 18 11 L 28 11 L 28 14 C 28 15.644531 29.355469 17 31 17 L 49 17 C 50.644531 17 52 15.644531 52 14 L 52 11 L 62 11 C 62.566406 11 63 11.433594 63 12 L 63 68 C 63 68.566406 62.566406 69 62 69 L 18 69 C 17.433594 69 17 68.566406 17 68 L 17 12 C 17 11.433594 17.433594 11 18 11 Z M 22 13 C 21.449219 13 21 13.449219 21 14 C 21 14.550781 21.449219 15 22 15 C 22.550781 15 23 14.550781 23 14 C 23 13.449219 22.550781 13 22 13 Z M 22 17 C 21.449219 17 21 17.449219 21 18 C 21 18.550781 21.449219 19 22 19 C 22.550781 19 23 18.550781 23 18 C 23 17.449219 22.550781 17 22 17 Z M 22 21 C 21.449219 21 21 21.449219 21 22 C 21 22.550781 21.449219 23 22 23 C 22.550781 23 23 22.550781 23 22 C 23 21.449219 22.550781 21 22 21 Z M 22 25 C 21.449219 25 21 25.449219 21 26 C 21 26.550781 21.449219 27 22 27 C 22.550781 27 23 26.550781 23 26 C 23 25.449219 22.550781 25 22 25 Z M 22 29 C 21.449219 29 21 29.449219 21 30 C 21 30.550781 21.449219 31 22 31 C 22.550781 31 23 30.550781 23 30 C 23 29.449219 22.550781 29 22 29 Z M 28 30 L 28 38 L 36 38 L 36 30 Z M 30 32 L 34 32 L 34 36 L 30 36 Z M 22 33 C 21.449219 33 21 33.449219 21 34 C 21 34.550781 21.449219 35 22 35 C 22.550781 35 23 34.550781 23 34 C 23 33.449219 22.550781 33 22 33 Z M 40 33 L 40 35 L 55 35 L 55 33 Z M 22 37 C 21.449219 37 21 37.449219 21 38 C 21 38.550781 21.449219 39 22 39 C 22.550781 39 23 38.550781 23 38 C 23 37.449219 22.550781 37 22 37 Z M 22 41 C 21.449219 41 21 41.449219 21 42 C 21 42.550781 21.449219 43 22 43 C 22.550781 43 23 42.550781 23 42 C 23 41.449219 22.550781 41 22 41 Z M 28 44 L 28 52 L 36 52 L 36 44 Z M 22 45 C 21.449219 45 21 45.449219 21 46 C 21 46.550781 21.449219 47 22 47 C 22.550781 47 23 46.550781 23 46 C 23 45.449219 22.550781 45 22 45 Z M 30 46 L 34 46 L 34 50 L 30 50 Z M 31 47 L 31 49 L 33 49 L 33 47 Z M 40 47 L 40 49 L 55 49 L 55 47 Z M 22 49 C 21.449219 49 21 49.449219 21 50 C 21 50.550781 21.449219 51 22 51 C 22.550781 51 23 50.550781 23 50 C 23 49.449219 22.550781 49 22 49 Z M 22 53 C 21.449219 53 21 53.449219 21 54 C 21 54.550781 21.449219 55 22 55 C 22.550781 55 23 54.550781 23 54 C 23 53.449219 22.550781 53 22 53 Z M 22 57 C 21.449219 57 21 57.449219 21 58 C 21 58.550781 21.449219 59 22 59 C 22.550781 59 23 58.550781 23 58 C 23 57.449219 22.550781 57 22 57 Z M 22 61 C 21.449219 61 21 61.449219 21 62 C 21 62.550781 21.449219 63 22 63 C 22.550781 63 23 62.550781 23 62 C 23 61.449219 22.550781 61 22 61 Z M 22 65 C 21.449219 65 21 65.449219 21 66 C 21 66.550781 21.449219 67 22 67 C 22.550781 67 23 66.550781 23 66 C 23 65.449219 22.550781 65 22 65 Z"></path>
+            </svg>
+
             <p className="relative">
                 <h2 className="text-3xl font-bold">Testimonials</h2>
                 Real reviews of me of as a person, and as a developer.
