@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@property --fill {
+    syntax: "<percentage>";
+    initial-value: 100%;
+    inherits: false;
+}
+
+@layer components {
+    * {
+        // @apply transition-all duration-300 ease-in-out;
+    }
+
+    body {
+        @apply pt-[5rem] px-5;
+        @apply bg-[#101010];
+        overflow-x: hidden;
+    }
+
+    header {
+        @apply absolute top-0 left-0 w-screen bg-black h-16;
+        @apply flex items-center justify-between;
+
+        h1 {
+            @apply text-white font-bold text-3xl ml-3 font-mono;
+
+            strong {
+                @apply mr-2 text-pink-400;
+
+                i {
+                    animation: flicker 1s step-start infinite forwards;
+                    &:last-child {
+                        animation-delay: 0.15s;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        @apply bg-black flex flex-col items-center justify-center;
+
+        nav {
+            @apply flex items-center w-full h-20 pl-4 flex-wrap;
+            @apply bg-black shadow-md;
+
+            button {
+                @apply mr-4 w-[9rem];
+            }
+        }
+
+        section {
+            @apply max-w-[60rem];
+            @apply flex flex-row items-center justify-center w-full h-full flex-wrap;
+            @apply text-white w-full p-4 text-xl;
+
+            p {
+                @apply max-w-[45rem];
+            }
+        }
+    }
+
+    button {
+        @apply p-3 px-5 rounded-[0.125rem];
+        @apply text-white font-extrabold font-mono text-lg;
+        @apply bg-black hover:bg-gray-900;
+        @apply transition-colors duration-300 ease-in-out;
+        --fill: 0%;
+
+        border-bottom: 2px solid;
+        border-image-source: linear-gradient(90deg, rgba(244, 114, 182, 1) var(--fill), rgba(0, 0, 0, 1) var(--fill));
+        border-image-slice: 1;
+
+        &.active {
+            animation: fill 0.75s cubic-bezier(0.41, 1.15, 0.89, 1) forwards;
+            @apply bg-gray-900;
+        }
+    }
+
+    a {
+
+        @apply text-pink-300 font-bold mx-1 px-1;
+        @apply transition-all duration-300 ease-in-out;
+
+
+        &:hover {
+            @apply bg-pink-300 text-white rounded bg-opacity-60;
+        }
+    }
+
+    article {
+        @apply bg-gray-700 p-4 text-2xl font-bold w-[25rem] mt-10;
+        @apply rounded relative;
+        @apply hover:scale-105 transition-transform duration-300 ease-in-out;
+
+        sub {
+            @apply text-gray-400 italic font-semibold text-lg;
+        }
+
+        p {
+            @apply ml-[3rem];
+        }
+
+        img {
+            @apply w-10 h-10;
+            @apply absolute top-3;
+        }
+    }
+
+    .reviews {
+
+        @apply top-[20rem] left-[4rem] absolute pb-[10rem];
+        @apply flex flex-row flex-wrap justify-around items-center;
+
+        width: calc(100vw - 8rem);
+
+    }
+}
+
+@keyframes fill {
+    from {
+        --fill: 0%;
+    }
+    to {
+        --fill: 100%;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
