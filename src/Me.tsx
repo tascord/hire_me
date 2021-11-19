@@ -189,6 +189,14 @@ function Testimonials() {
                     </p>
                     <sub>Joe (for real this time), Friend</sub>
                 </article>
+                
+                 <article>
+                    <img src="https://mccartyweightloss.com/wp-content/uploads/kisspng-quotation-mark-symbol-pull-quote-sign-marks-vector-5ad89cafbbdd55.png" alt="Quote" />
+                    <p>
+                        I've known Flora for about 6 years and can confidently endorse them as a talented JavaScript, TypeScript, and Rust developer. I've been working with them on a number of successful projects, and have seen an exceptional and efficient output from Flora, with no issues.
+                    </p>
+                    <sub>Luke, Friend and Business Partner</sub>
+                </article>
 
 
 
